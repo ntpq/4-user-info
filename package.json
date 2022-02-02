@@ -1,0 +1,15 @@
+{
+  "name": "4-user-info",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": ["hardhat-sc/", "userinfo-web"],
+  "scripts": {
+    "sc": "yarn workspace hardhat-sc",
+    "web": "yarn workspace userinfo-web",
+    "hh": "yarn sc run hardhat",
+    "postinstall": "yarn sc typechain",
+    "contracts:build": "yarn sc compile",
+    "contracts:rebuild": "yarn sc clean && yarn sc compile",
+    "contracts:deploy": "yarn sc deploy:iotex-testnet"
+  }
+}
