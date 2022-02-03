@@ -1,5 +1,4 @@
 import React from "react"
-import { IQFirstContract } from "typechains"
 
 function MessageArea({ data }: any) {
   const { time, theAddress, name } = data
