@@ -1,6 +1,6 @@
 import { useWeb3React } from "@web3-react/core"
 import useInterval from "hooks/useInterval"
-import { last } from "lodash"
+import { isEmpty, last } from "lodash"
 import moment from "moment"
 import React, { useState } from "react"
 import { IQFirstContract, IQFirstContract__factory } from "typechains"
@@ -35,7 +35,7 @@ function Content() {
   return (
     <div className="grid grid-cols-5">
       <div className="col-span-5">
-        <MessageArea data={last(data)} />
+     { !isEmpty(last(data))&&<MessageArea data={last(data)} />}
       </div>
       {/* <div className="col-span-1">small</div> */}
     </div>
