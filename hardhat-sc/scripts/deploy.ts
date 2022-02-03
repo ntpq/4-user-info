@@ -7,11 +7,11 @@ async function main() {
     console.log("Deploying contracts with the account:", deployer.address)
     console.log("Account balance:", (await deployer.getBalance()).toString())
 
-    const UserInformation = await ethers.getContractFactory("UserInformation")
-    const userInformation = await UserInformation.deploy()
+    const IQFirstContract = await ethers.getContractFactory("IQFirstContract")
+    const contract = await IQFirstContract.deploy()
 
-    console.log("UserInformation deployed!")
-    console.log("UserInformation contract address:", userInformation.address)
+    console.log("IQFirstContract deployed!")
+    console.log("IQFirstContract contract address:", contract.address)
 
     process.exit(0)
   } catch (e) {

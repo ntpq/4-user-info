@@ -22,7 +22,7 @@ const config: HardhatUserConfig = {
     },
     iotexTestnet: {
       url: "https://babel-api.testnet.iotex.io",
-      accounts: [`${process.env["NETWORK_PRIVATE_KEY"]}`],
+      accounts: ["0xe0046a0f5351a37020793f3b55d2f1056b7affb0847c4509a879546c13bcc63b"],
       chainId: 4690,
       gas: 8500000,
       gasPrice: 1000000000000,
