@@ -1,6 +1,6 @@
 import { useWeb3React } from "@web3-react/core"
 import Content from "components/Content"
-import UserInformation from "components/UserInformation"
+// import UserInformation from "components/UserInformation"
 import MetaMask from "components/wallet/Connectors/MetaMask"
 
 export default function Home() {
@@ -12,14 +12,14 @@ export default function Home() {
         <MetaMask />
       </div>
       <hr />
-      {/* {!active ? (
+      {!active ? (
         <span>Please connect to wallet. (@IoTeX Testnet)</span>
       ) : !(chainId == 4690) ? (
         <span>Please change network to IoTeX Testnet.</span>
       ) : (
-        <UserInformation />
-      )} */}
+        // <UserInformation />
       <Content/>
+      )}
     </div>
   )
 }

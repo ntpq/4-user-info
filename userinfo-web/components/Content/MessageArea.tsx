@@ -1,7 +1,8 @@
-import { url } from "inspector"
 import React from "react"
-function MessageArea({data}) {
-  const {time,theAddress,name} = data;
+import { IQFirstContract } from "typechains"
+
+function MessageArea({ data }: any) {
+  const { time, theAddress, name } = data
   return (
     <div
       style={{
