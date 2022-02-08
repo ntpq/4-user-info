@@ -14,7 +14,10 @@ function MessageArea({ data }: any) {
       }}
       className="p-32 content-between grid "
     >
-      <p className="text-justify">{name}</p>
+      <div>
+        <p className="text-justify">Hi Everyone !</p>
+        <p className="text-justify">{name}</p>
+      </div>
       <div className="align-end">
         <div>{theAddress}</div>
         <div>{time}</div>

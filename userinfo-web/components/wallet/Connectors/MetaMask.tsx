@@ -1,9 +1,13 @@
 import { useWeb3React } from "@web3-react/core"
 import { injected } from "components/wallet/connectors"
+import { useEffect } from "react";
 
 export default function MetaMask() {
   const { active, activate, deactivate } = useWeb3React()
-
+  useEffect(() => {
+    connect()
+  }, []);
+  
   async function connect() {
     try {
       await activate(injected)
