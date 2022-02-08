@@ -49,7 +49,7 @@ export default function Modal() {
                 <div className="relative p-4 flex-auto">
                 <div className="col-span-2">
                         <label className="text-gray-700" htmlFor="name">
-                            <textarea required maxLength={250} className="flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" id="comment" placeholder="Enter your comment" name="comment" rows="5" cols="40">
+                            <textarea required maxLength={250} className="flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" id="comment" placeholder="Write your message" name="comment" rows={5} cols={40}>
                             </textarea>
                         </label>
                     </div>
