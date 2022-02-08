@@ -5,7 +5,7 @@ import { IQFirstContract, IQFirstContract__factory } from "typechains";
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
   const { library } = useWeb3React()
-  async function handleSubmit(e:React.FormEvent) {
+  async function handleSubmit(e:any) {
     e.preventDefault();
     const text = e.target[0].value;
     const IQFirstContract: IQFirstContract = new IQFirstContract__factory()
